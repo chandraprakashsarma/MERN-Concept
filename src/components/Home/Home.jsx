@@ -68,7 +68,7 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
-              Web Design
+              MongoDB Atlas
             </h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -92,9 +92,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">
-              Web Development
-            </h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">Express</h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
@@ -117,9 +115,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">
-              Responsive Design
-            </h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">React</h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
@@ -142,9 +138,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">
-              React JS, Javascript, CSS
-            </h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">Node JS</h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.

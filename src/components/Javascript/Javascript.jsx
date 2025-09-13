@@ -1,5 +1,3 @@
-import React from "react";
-import myImage from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 
 const users = [

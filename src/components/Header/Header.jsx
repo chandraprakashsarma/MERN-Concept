@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
-import Button from "../Navbar/Button";
 import ThemeSwitcher from "../Hooks/useEffect/ThemeSwitcherApp/ThemeSwitcher";
 
 export default function Header() {
@@ -42,12 +40,6 @@ export default function Header() {
               >
                 Get started
               </Link>
-              <Link
-                to="#"
-                className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
-              >
-                <ThemeSwitcher />
-              </Link>
             </div>
             <div
               className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
@@ -69,7 +61,7 @@ export default function Header() {
 
                 <li>
                   <NavLink
-                    to="/react"
+                    to="/basicreact"
                     className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 duration-200 ${
                         isActive ? "text-orange-700" : "text-gray-700"
@@ -108,14 +100,14 @@ export default function Header() {
 
                 <li>
                   <NavLink
-                    to="/project"
+                    to="/uicomponent"
                     className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 duration-200 ${
                         isActive ? "text-orange-700" : "text-gray-700"
                       } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                     }
                   >
-                    Project
+                    MongoDB
                   </NavLink>
                 </li>
 
@@ -128,7 +120,7 @@ export default function Header() {
                       } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                     }
                   >
-                    Contact
+                    Redux - RTK
                   </NavLink>
                 </li>
                 <li>
@@ -140,7 +132,7 @@ export default function Header() {
                       } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                     }
                   >
-                    Github
+                    API
                   </NavLink>
                 </li>
               </ul>
