@@ -11,9 +11,10 @@ export default function Home() {
               Hi, I am Chandra Prakash Sharma
             </h1>
             <p className="mt-8 text-lg text-gray-700">
-              I am a frontend web developer. I can provide clean code and pixel
-              perfect design. I also make website more & more interactive with
-              web animations.
+              Skilled MERN Stack developer for building dynamic,
+              high-performance web applications. Proficient in JavaScript,
+              React, Redux, and MongoDB development practices. Passionate about
+              user experience, responsive design, and code quality.
             </p>
             <form action="" className="mt-8 flex items-start space-x-2">
               <div>
