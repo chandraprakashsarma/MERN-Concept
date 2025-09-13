@@ -11,12 +11,8 @@ import Layout from "./Layout.jsx";
 import Home from "./components/Home/Home.jsx";
 import BasicReact from "./components/React/BasicReact.jsx";
 import Javascript from "./components/Javascript/Javascript.jsx";
-import About from "./components/About/About.jsx";
-import Contact from "./components/Contact/Contact.jsx";
-import Project from "./components/Project/Project.jsx";
+import ReduxRTK from "./components/ReduxToolKit/ReduxRTK.jsx";
 import UIComponent from "./components/UIComponent/UIComponent.jsx";
-import StaticComp from "./components/StaticComp/StaticComp.jsx";
-import Accordion from "./components/UIComponent/Accordion.jsx";
 // const router = createBrowserRouter([
 //   {
 //     path: '/',
@@ -44,12 +40,8 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="basicreact" element={<BasicReact />} />
       <Route path="javascript" element={<Javascript />} />
-      <Route path="staticComp" element={<StaticComp />} />
-      <Route path="project" element={<Project />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path="reduxRTK" element={<ReduxRTK />} />
       <Route path="uicomponent" element={<UIComponent />} />
-      <Route path="accordion" element={<Accordion />} />
     </Route>
   )
 );
