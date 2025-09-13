@@ -1,64 +1,19 @@
-import React from 'react'
-import myImage from '../../assets/myImage.jpg';
-import MultipleProgressBarsWithTitle from './ProgressBars';
-import Timeline from './Timeline';
-
-const timelineItems = [
-  {
-    date: "2018 - Present",
-    title: "Frontend Web Developer",
-    description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-    link: "#",
-    linkText: "Learn more"
-  },
-  {
-    date: "2016 - 2018",
-    title: "Marketing UI design in Figma",
-    description: "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project."
-  },
-  {
-    date: "2014 - 1016",
-    title: "E-Commerce UI code in Tailwind CSS",
-    description: "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
-  }
-];
-const EducationalQualifications = [
-  {
-    date: "2018 - 2019",
-    title: "Master of Science",
-    description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-    link: "#",
-    linkText: "Learn more"
-  },
-  {
-    date: "2016 - 2018",
-    title: "Bachelor of Science",
-    description: "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project."
-  },
-  {
-    date: "2014 - 1016",
-    title: "Higher Schoold Graduation",
-    description: "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
-  }
-];
-
+import myImage from "../../assets/myImage.jpg";
 
 export default function Home() {
-    return (
-        <>
-
-<div className="relative w-full bg-white">
+  return (
+    <>
+      <div className="relative w-full bg-white">
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
           <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
-            <div className="mt-8 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1">
-              
-              
-            </div>
+            <div className="mt-8 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1"></div>
             <h1 className="mt-8 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
-            Hi, I am Chandra Prakash Sharma
+              Hi, I am Chandra Prakash Sharma
             </h1>
             <p className="mt-8 text-lg text-gray-700">
-            I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
+              I am a frontend web developer. I can provide clean code and pixel
+              perfect design. I also make website more & more interactive with
+              web animations.
             </p>
             <form action="" className="mt-8 flex items-start space-x-2">
               <div>
@@ -68,7 +23,9 @@ export default function Home() {
                   placeholder="Enter your email"
                   id="email"
                 ></input>
-                <p className="mt-2 text-sm text-gray-500">We care about your privacy</p>
+                <p className="mt-2 text-sm text-gray-500">
+                  We care about your privacy
+                </p>
               </div>
               <div>
                 <button
@@ -81,19 +38,17 @@ export default function Home() {
             </form>
           </div>
           <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
-            
-            <img src={myImage} alt="My Image" className="aspect-[3/2] bg-gray-50 object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]" />
-          
-
+            <img
+              src={myImage}
+              alt="My Image"
+              className="aspect-[3/2] bg-gray-50 object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]"
+            />
           </div>
         </div>
       </div>
 
       {/* Features Section */}
       <div className="mx-auto my-32 max-w-7xl px-2 lg:px-8">
-      
-
-
         <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
           <div>
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
@@ -112,10 +67,12 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Web Design</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              Web Design
+            </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
           <div>
@@ -135,10 +92,12 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Web Development</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              Web Development
+            </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
           <div>
@@ -158,10 +117,12 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Responsive Design</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              Responsive Design
+            </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
           <div>
@@ -181,46 +142,45 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">React JS, Javascript, CSS</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              React JS, Javascript, CSS
+            </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
         </div>
       </div>
 
-      <MultipleProgressBarsWithTitle/>
-      <Timeline items={timelineItems} Education={EducationalQualifications}/>
-
-
-        {/* Hiring Banner */}
-        <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
-          <div className="space-y-6">
-            <p className="text-sm font-semibold md:text-base">Join our team &rarr;</p>
-            <p className="text-3xl font-bold md:text-4xl">We&apos;re just getting started</p>
-            <p className="text-base text-gray-600 md:text-lg">
-              Our philosophy is simple — hire a team of diverse, passionate people and foster a
-              culture that empowers you to do your best work.
-            </p>
-            <button
-              type="button"
-              className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Join Now
-            </button>
-          </div>
-          <div className="md:mt-o mt-10 w-full">
-            <img
-              src="https://images.unsplash.com/photo-1605165566807-508fb529cf3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-              alt="Getting Started"
-              className="rounded-lg"
-            />
-          </div>
+      {/* Hiring Banner */}
+      <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
+        <div className="space-y-6">
+          <p className="text-sm font-semibold md:text-base">
+            Join our team &rarr;
+          </p>
+          <p className="text-3xl font-bold md:text-4xl">
+            We&apos;re just getting started
+          </p>
+          <p className="text-base text-gray-600 md:text-lg">
+            Our philosophy is simple — hire a team of diverse, passionate people
+            and foster a culture that empowers you to do your best work.
+          </p>
+          <button
+            type="button"
+            className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Join Now
+          </button>
         </div>
-      
-          
-      </>
-
-    )
+        <div className="md:mt-o mt-10 w-full">
+          <img
+            src="https://images.unsplash.com/photo-1605165566807-508fb529cf3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+            alt="Getting Started"
+            className="rounded-lg"
+          />
+        </div>
+      </div>
+    </>
+  );
 }
