@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchReactConcepts } from "../features/reactConceptSlice";
 import { Link } from "react-router-dom";
+import AddReactConcept from "../React/AddReactConcept";
 
 export default function BasicReact() {
   const dispatch = useDispatch();
@@ -20,10 +21,11 @@ export default function BasicReact() {
 
   return (
     <>
+      <AddReactConcept /> {/* Form to insert data */}
+      {/* नीचे आपका list rendering वाला code रहेगा */}
       <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
         React Basic Concept
       </h1>
-
       <div className="grid grid-cols-4 gap-4">
         {reactConcepts.map((concept, index) => (
           <Link
