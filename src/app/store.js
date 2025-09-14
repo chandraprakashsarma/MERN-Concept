@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import itemReducer from "../features/itemSlice";
+import reactConceptReducer from "../components/features/reactConceptSlice";
 
 export const store = configureStore({
   reducer: {
-    items: itemReducer,
+    reactConcepts: reactConceptReducer,
   },
 });
