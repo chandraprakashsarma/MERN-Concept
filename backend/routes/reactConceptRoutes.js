@@ -31,4 +31,41 @@ router.post("/", async (req, res) => {
   }
 });
 
+// @desc Update a React Concept
+// @route PUT /api/reactconcepts/:id
+router.put("/:id", async (req, res) => {
+  const { name, route } = req.body;
+
+  try {
+    const concept = await ReactConcept.findById(req.params.id);
+    if (!concept) {
+      return res.status(404).json({ message: "Concept not found" });
+    }
+
+    concept.name = name || concept.name;
+    concept.route = route || concept.route;
+
+    const updatedConcept = await concept.save();
+    res.json(updatedConcept);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// @desc Delete a React Concept
+// @route DELETE /api/reactconcepts/:id
+router.delete("/:id", async (req, res) => {
+  try {
+    const concept = await ReactConcept.findById(req.params.id);
+    if (!concept) {
+      return res.status(404).json({ message: "Concept not found" });
+    }
+
+    await concept.deleteOne();
+    res.json({ message: "Concept deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 module.exports = router;
