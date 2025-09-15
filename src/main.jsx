@@ -17,11 +17,13 @@ import BasicReact from "./components/React/BasicReact.jsx";
 import Javascript from "./components/Javascript/Javascript.jsx";
 import ReduxRTK from "./components/ReduxToolKit/ReduxRTK.jsx";
 import UIComponent from "./components/UIComponent/UIComponent.jsx";
+import AuthForm from "./components/AuthForm/AuthForm.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
+      <Route path="auth" element={<AuthForm />} />
       <Route path="basicreact" element={<BasicReact />} />
       <Route path="javascript" element={<Javascript />} />
       <Route path="reduxRTK" element={<ReduxRTK />} />
