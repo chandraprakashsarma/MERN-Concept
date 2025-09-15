@@ -6,9 +6,11 @@ import {
   updateConcept,
   deleteConcept,
 } from "../features/reactConceptSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function ReactConceptsCRUD() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const {
     items: concepts,
     loading,
@@ -50,6 +52,11 @@ export default function ReactConceptsCRUD() {
     if (window.confirm("Are you sure you want to delete this concept?")) {
       dispatch(deleteConcept(id));
     }
+  };
+
+  // ✅ Navigate
+  const handleNavigate = (routePath) => {
+    navigate(routePath);
   };
 
   return (
@@ -96,10 +103,10 @@ export default function ReactConceptsCRUD() {
             <span>
               <b>{concept.name}</b> - {concept.route}
             </span>
-            <div>
+            <div className="flex gap-2">
               <button
                 onClick={() => handleEdit(concept)}
-                className="bg-yellow-500 text-white px-3 py-1 rounded mr-2"
+                className="bg-yellow-500 text-white px-3 py-1 rounded"
               >
                 Edit
               </button>
@@ -108,6 +115,12 @@ export default function ReactConceptsCRUD() {
                 className="bg-red-500 text-white px-3 py-1 rounded"
               >
                 Delete
+              </button>
+              <button
+                onClick={() => handleNavigate(concept.route)}
+                className="bg-green-500 text-white px-3 py-1 rounded"
+              >
+                Go
               </button>
             </div>
           </li>
